@@ -6,7 +6,9 @@ hist(as.numeric(as.character(foo$Global_active_power)),
      breaks = 12,
      xlim = c(0,6),
      col = "red",
+     xaxt = "n",
      main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)")
+axis(1, at=c(0,2,4,6), labels=c(0,2,4,6))
 dev.copy(png,'plot1.png', width = 480, height = 480)
 dev.off()
