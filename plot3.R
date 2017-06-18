@@ -9,6 +9,7 @@ xrange <- range(1:length(foo$Sub_metering_1))
 plot(xrange, yrange, type = "n",
      ylab = "Energy sub metering",
      xlab = "")
+# FIXME:  the legend really needs to be smaller.  figure out how to do that.
 legend("topright",
     legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
     col = c("black", "red", "blue"),
